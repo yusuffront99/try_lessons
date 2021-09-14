@@ -1,7 +1,9 @@
 <?php
 
+use App\Models\Post;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -19,5 +21,4 @@ Route::get('/', function () {
 });
 
 Route::get('/posts', [PostController::class, 'index']);
-
-Route::get('/posts/{post:slug}', [PostController::class, 'show']);
+Route::get('/posts/{post:slug}', [PostController::class, 'view']);
