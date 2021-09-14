@@ -13,9 +13,9 @@
                     <table class="table">
                         <thead>
                             <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
+                            <th scope="col">No</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Subtitle</th>
                             <th scope="col">Handle</th>
                             </tr>
                         </thead>
