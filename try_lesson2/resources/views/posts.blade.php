@@ -28,7 +28,7 @@
                         <tr>
                         <th scope="row">{{$no++}}</th>
                         <td>{{$post->title}}</td>
-                        <td><a href="/posts/{{$post->slug}}">{{$post->slug}}</a></td>
+                        <td><a href="/posts/{{$post->slug}}">{{$post->title}}</a></td>
                         <td>@mdo</td>
                         </tr>
                     </tbody>

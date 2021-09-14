@@ -20,4 +20,4 @@ Route::get('/', function () {
 
 Route::get('/posts', [PostController::class, 'index']);
 
-Route::get('/posts/{slug}', [PostController::class, 'view']);
+Route::get('/posts/{post:slug}', [PostController::class, 'show']);
