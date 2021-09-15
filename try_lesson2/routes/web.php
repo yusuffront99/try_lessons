@@ -3,6 +3,7 @@
 use App\Models\Post;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\CategoryController;
 
 
@@ -25,3 +26,5 @@ Route::get('/posts', [PostController::class, 'index']);
 Route::get('/posts/{post:slug}', [PostController::class, 'view']);
 
 Route::get('/categories/{category:slug}', [CategoryController::class, 'show']);
+
+Route::get('/users/{user:name}', [UserController::class, 'detail']);

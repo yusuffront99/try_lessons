@@ -16,7 +16,7 @@
                             <th scope="col">No</th>
                             <th scope="col">Title</th>
                             <th scope="col">Subtitle</th>
-                            <th scope="col">Handle</th>
+                            <th scope="col">Account</th>
                             </tr>
                         </thead>
                         @php
@@ -29,7 +29,7 @@
                             <th scope="row">{{$no++}}</th>
                             <td>{{$post->title}}</td>
                             <td><a href="/posts/{{$post->slug}}" class="text-decoration-none">{{$post->title}}</a></td>
-                            <td><a href="">{{$post->user->email}}</a></td>
+                            <td><a href="/users/{{$post->user->name}}">{{$post->user->email}}</a></td>
                             </tr>
                         </tbody>
                         @endforeach
