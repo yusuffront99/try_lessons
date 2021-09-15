@@ -28,8 +28,8 @@
                             <tr>
                             <th scope="row">{{$no++}}</th>
                             <td>{{$post->title}}</td>
-                            <td><a href="/posts/{{$post->slug}}">{{$post->title}}</a></td>
-                            <td>@mdo</td>
+                            <td><a href="/posts/{{$post->slug}}" class="text-decoration-none">{{$post->title}}</a></td>
+                            <td><a href="">{{$post->user->email}}</a></td>
                             </tr>
                         </tbody>
                         @endforeach

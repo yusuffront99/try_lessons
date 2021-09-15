@@ -34,7 +34,7 @@
                         </tbody>
                         @endforeach
                     </table>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="/posts" class="btn btn-primary">Go main</a>
                 </div>
             </div>
         </div>
