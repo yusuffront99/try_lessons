@@ -7,13 +7,11 @@ use App\Models\User;
 
 class UserController extends Controller
 {
-    public function detail(User $user)
+    public function detail(User $author)
     {
-        return view('users', [
-            "title"=>"Details Data",
-            "name"=>$user->name,
-            "email"=>$user->email,
-            "posts"=>$user->post
+        return view('posts', [
+            "title"=>"Details User",
+            "posts"=>$author->post
         ]);
     }
 }

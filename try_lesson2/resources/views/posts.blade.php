@@ -14,6 +14,7 @@
                         <thead>
                             <tr>
                             <th scope="col">No</th>
+                            <th scope="col">Author</th>
                             <th scope="col">Title</th>
                             <th scope="col">Subtitle</th>
                             <th scope="col">Account</th>
@@ -27,9 +28,10 @@
                         <tbody>
                             <tr>
                             <th scope="row">{{$no++}}</th>
+                            <th><a href="/authors/{{$post->author->username}}">{{$post->author->name}}</a></th>
                             <td>{{$post->title}}</td>
                             <td><a href="/posts/{{$post->slug}}" class="text-decoration-none">{{$post->title}}</a></td>
-                            <td><a href="/users/{{$post->user->name}}">{{$post->user->email}}</a></td>
+                            <td><a href="/authors/{{$post->author->name}}">{{$post->author->email}}</a></td>
                             </tr>
                         </tbody>
                         @endforeach

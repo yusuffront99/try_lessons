@@ -9,7 +9,7 @@
             <div class="card-body">
                 <h5 class="card-title">{{$post->title}}</h5>
                 <p>
-                    Category : <a href="/categories/{{$post->category->slug}}">{{$post->category->slug}}</a>
+                    Author By : <a href="/authors/{{$post->user->username}}">{{$post->user->name}}</a> Category : <a href="/categories/{{$post->category->slug}}">{{$post->category->slug}}</a>
                 </p>
                 <p class="card-text">{{$post->content}}</p>
                 <a href="/posts" class="btn btn-primary">Go Main</a>
