@@ -53,7 +53,7 @@ class DatabaseSeeder extends Seeder
         
         Category::create([
             "name"=>"Travelling",    
-            "slug"=>"travellig"
+            "slug"=>"travelling"
         ]);
 
         // post 
