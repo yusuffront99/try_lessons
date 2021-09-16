@@ -8,7 +8,7 @@
             </div>
             <div class="card-body">
                 <div class="container mt-2">
-                    <h5 class="card-title">Special title treatment</h5>
+                    <h5 class="card-title">{{$title}}</h5>
                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                     <table class="table">
                         <thead>
