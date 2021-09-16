@@ -54,12 +54,11 @@
         <div class="card">
             <img src="..." class="card-img-top" alt="..."><hr>
 
-            <div class="card-body">
+            <div class="card-body text-center">
                 <h5 class="card-title">{{$posts[0]->title}}</h5><hr>
-                <small class="card-title text-muted">Writter By : <a href="/authors/{{$posts[0]->author->username}}">{{$posts[0]->author->username}}</a> in <a href="/categories/{{$posts[0]->category->slug}}">{{$posts[0]->category->name}}</a>3 minutes ago</small>
-                <p class="card-text">{{$posts[0]->content}}</p>
-                <p class="card-text">{{$posts[0]->content}}</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <small class="card-title text-muted">Writter By : <a href="/authors/{{$posts[0]->author->username}}">{{$posts[0]->author->username}}</a> in <a href="/categories/{{$posts[0]->category->slug}}">{{$posts[0]->category->name}}</a> {{$posts[0]->created_at->diffForHumans()}} </small>
+                <p class="card-text">{{$posts[0]->summary}}</p>
+                <a href="#" class="btn btn-primary btn-sm">Read more ...</a>
             </div>
         </div>
     </div>
