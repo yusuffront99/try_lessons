@@ -1,4 +1,4 @@
-@extends('layouts.main')
+{{-- @extends('layouts.main')
 
 @section('container')
     <div class="container-fluid mt-3">
@@ -41,4 +41,30 @@
             </div>
         </div>
     </div>
+@endsection --}}
+
+@extends('layouts.main')
+
+@section('container')
+    
+    {{-- if exits post --}}
+    @if ($posts->count())
+    
+    <div class="container-fluid mt-4">
+        <div class="card">
+            <img src="..." class="card-img-top" alt="..."><hr>
+
+            <div class="card-body">
+                <h5 class="card-title">{{$posts[0]->title}}</h5><hr>
+                <small class="card-title text-muted">Writter By : <a href="/authors/{{$posts[0]->author->username}}">{{$posts[0]->author->username}}</a> in <a href="/categories/{{$posts[0]->category->slug}}">{{$posts[0]->category->name}}</a>3 minutes ago</small>
+                <p class="card-text">{{$posts[0]->content}}</p>
+                <p class="card-text">{{$posts[0]->content}}</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+
+    @else
+        <p class="text-center fs-4">No post Found</p>
+    @endif
 @endsection
